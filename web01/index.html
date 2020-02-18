@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	tr {text-align: right;}
+</style>
+</head>
+<body>
+<!-- <form action="./member/newMember01_js.jsp"> -->
+<!-- <form action="./member/newMember02_jsp.jsp" method="post"> -->
+<!-- <form action="./member/newMember03_bean.jsp" method="post"> -->
+<form action="./member/newMember04_el.jsp" method="post">
+	<table>
+		<tr>
+			<th width="120">ID</th> 
+			<td><input type="text" name="id"></td>
+		</tr>
+		<tr>
+			<th>Name</th> 
+			<td><input type="Text" name="name"></td>
+		</tr>
+		<tr>
+			<th>PWD</th> 
+			<td><input type="password" name="pwd1"></td>
+		</tr>
+		<tr>
+			<th>PWD 확인</th> 
+			<td><input type="password" name="pwd2"></td>
+		</tr>
+		<tr>
+			<th>E-mail</th> 
+			<td><input type="email" name="email"></td>
+		</tr>
+		<tr>
+			<th>Phone</th>
+			<td>
+				<input type="text" name="phone1" size="3" maxlength="3"> - 
+				<input type="text" name="phone2" size="4" maxlength="4"> - 
+				<input type="text" name="phone3" size="4" maxlength="4">
+			</td>
+		</tr>
+		<tr>
+			<th>Github Addr</th> 
+			<td><input type="text" name="gitaddr"></td>
+		</tr>
+
+		<tr>
+			<th>Job</th> 
+			<td>
+				<input type="radio" name="job" value="학생">학생
+				<input type="radio" name="job" value="직장인">직장인
+				<input type="radio" name="job" value="주부">주부
+				<input type="radio" name="job" value="기타">기타
+			</td>
+		</tr>
+		<tr>
+			<th>관심영역</th> 
+			<td>
+				<input type="checkbox" name="hobby" value="영화">영화
+				<input type="checkbox" name="hobby" value="운동">운동
+				<input type="checkbox" name="hobby" value="개발">개발
+				<input type="checkbox" name="hobby" value="영화">게임
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="padding-left:200px">
+				<br>
+				<input type="submit" value="회원가입" onclick="#">
+				<input type="reset" value="취소하기" style="float:right">
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
